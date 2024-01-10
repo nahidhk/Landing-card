@@ -184,7 +184,7 @@ right: 33.5%;
   float: left;
   margin: 10px;
   height: 270px;
-  width: 220px;
+  width: 165px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 #000;
@@ -193,7 +193,6 @@ right: 33.5%;
 .grid-row{
   height: 600px;
   width: 100%;
-  background-color: red;
  display: block; 
  justify-content: none;
 }
