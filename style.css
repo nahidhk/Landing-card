@@ -1,0 +1,166 @@
+/* css font */
+@font-face {
+  font-family: font1;
+  src: url("/font/Exo2-Medium.ttf");
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: font1;
+}
+.nav{
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background-color: #F2F2F2BF;
+  box-shadow: 0 0 3px 0 #000;
+}
+.nav-logo{
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.nav-img{
+  background-image: url("/img/home-slider.gif");
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+}
+.main-box{
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  background-color: #0000009E;
+}
+
+.btn-box{
+position: relative;
+top: 25%
+}
+.btn-box b{
+  color: #fff;
+  margin: 0;
+  border-left: 4px solid #14a23a;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+.btn-box a{
+  padding-right: 450px;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #14A23A;
+  animation: r2 0.5s;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.title{
+  height: 50px;
+  width: 95%;
+  box-shadow: 0 0 10px 0 #464646;
+ border-radius: 100px 7px 100px 7px;
+}
+.title h2{
+position: relative;
+top: 10px;
+color: #434343;
+}
+.r1{
+  animation: r1 0.5s;
+  position: absolute;
+  left: 10.5%;
+}
+.r2{
+    position: absolute;
+    right: 0;
+}
+@keyframes r1{
+  0%{
+   left: 0; 
+  }
+  100%{
+   left: 10.5%; 
+  }
+}
+
+@keyframes r2{
+  0%{
+  padding-right: 0; 
+  }
+  100%{
+   padding-right: 450px;
+ 
+  }
+}
+
+
+
+
+/*======== css mobile =============*/
+
+@media only screen and (max-width: 600px) {
+ 
+ 
+.r1{
+  animation: r1 0.5s;
+  position: absolute;
+  left: 33.5%;
+}
+.r2{
+  top: 80px;
+    animation: r2 0.5s;
+  position: absolute;
+right: 33.5%;
+}
+@keyframes r1{
+  0%{
+   left: 0; 
+  }
+  100%{
+   left: 33.5%; 
+  }
+}
+
+@keyframes r2{
+  0%{
+   right: 0; 
+  }
+  100%{
+   right: 33.5%; 
+  }
+}
+
+
+.btn-box a{
+    padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #14A23A;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+.btn-box b{
+  border-left: 4px solid #14A23A00;
+  color: #fff;
+  margin: 0;
+  border-bottom: 4px solid #14a23a;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+ 
+}
