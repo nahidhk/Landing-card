@@ -106,7 +106,7 @@ color: #434343;
 
 .grid-itm{
   height: 290px;
-  width: 190px;
+  width: 230px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 #000;
@@ -123,7 +123,7 @@ color: #434343;
   }
 /*======== css mobile =============*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
  
  
 .r1{
@@ -177,6 +177,25 @@ right: 33.5%;
   border-bottom: 4px solid #14a23a;
   font-size: 2.4rem;
   margin-bottom: 10px;
+}
+
+.grid-itm{
+
+  float: left;
+  margin: 10px;
+  height: 270px;
+  width: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #000;
+}
+
+.grid-row{
+  height: 600px;
+  width: 100%;
+  background-color: red;
+ display: block; 
+ justify-content: none;
 }
  
 }
