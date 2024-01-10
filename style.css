@@ -11,12 +11,14 @@ body {
     font-family: font1;
 }
 .nav{
+  z-index: 100;
   position: fixed;
   top: 0;
   height: 75px;
   width: 100%;
   background-color: #F2F2F2BF;
   box-shadow: 0 0 3px 0 #000;
+  backdrop-filter: blur(3px);
 }
 .nav-logo{
   font-size: 25px;
@@ -102,8 +104,17 @@ color: #434343;
   }
 }
 
+.grid-itm{
+  height: 290px;
+  width: 170px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #000;
+}
 
-
+.grid-row{
+ 
+}
 
 /*======== css mobile =============*/
 
