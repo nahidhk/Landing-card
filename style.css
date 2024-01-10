@@ -106,16 +106,21 @@ color: #434343;
 
 .grid-itm{
   height: 290px;
-  width: 170px;
+  width: 190px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 #000;
 }
 
 .grid-row{
- 
+ display: flex; 
+ justify-content: space-around;
 }
 
+   ::selection {
+   background: green;
+   color: pink;
+  }
 /*======== css mobile =============*/
 
 @media only screen and (max-width: 600px) {
