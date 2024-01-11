@@ -137,7 +137,7 @@ box-shadow: 0 0 5px 0 #232323;
 }
 
 ::selection {
-  background: #FFFFFF00;
+  background: #ffc5c5;
   color: #08FDFF;
 }
 
@@ -222,17 +222,99 @@ box-shadow: 0 0 5px 0 #232323;
   color: #FDFF46;
   cursor: pointer;
   font-size: 28px;
-  border: 1px solid #4680ff;
+ 
   padding: 2px;
   box-shadow: 0 0 50px 0 #FDFF46;
 }
+.menu-div{
+  font-size: 35px;
+  color: #000;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+
+}
+.menu-div:hover{
+  
+  background-color: #4680ff;
+color: #fff;
+border-radius: 100px;
+width: 43px;
+padding-left: 7px;
+}
+.vv{
+  display: block;
+}
+.none{
+  display: none;
+}
+.menu{
+  height: 100vh;
+  width: 100%;
+  background-color: #00000059;
+  position: fixed;
+  z-index: 101;
+  backdrop-filter: blur(100px);
+}
+.rxlink-box{
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.rxlink-box p{
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.8s;
+  animation: text 0.9s;
+}
+@keyframes text {
+  0%{
+    font-size: 1px;
+  }
+  100%{
+    font-size: auto;
+  }
+}
+.rxlink-box p:hover{
+  color: #ffd900;
+  border: 1px solid #ffd900;
+  border-radius: 100px;
+  padding: 10px;
+}
+.rxlink-box p:active{
+  color: #ffd900;
+  background-color: #4680ff;
+  border: 1px solid #ffd900;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*======== css mobile =============*/
 
 
 
 
 @media only screen and (max-width: 950px) {
-
+  .rxlink-box p{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
 
   .r1 {
     animation: r1 0.5s;
