@@ -6,11 +6,12 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: font1;
+  margin: 0;
+  padding: 0;
+  font-family: font1;
 }
-.nav{
+
+.nav {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -20,13 +21,15 @@ body {
   box-shadow: 0 0 3px 0 #000;
   backdrop-filter: blur(3px);
 }
-.nav-logo{
+
+.nav-logo {
   font-size: 25px;
   position: absolute;
   top: 20px;
   left: 20px;
 }
-.nav-img{
+
+.nav-img {
   background-image: url("/img/home-slider.gif");
   height: 250px;
   width: 100%;
@@ -34,25 +37,28 @@ body {
   background-position: center;
   background-size: cover;
 }
-.main-box{
+
+.main-box {
   text-align: center;
   height: 250px;
   width: 100%;
   background-color: #0000009E;
 }
 
-.btn-box{
-position: relative;
-top: 25%
+.btn-box {
+  position: relative;
+  top: 25%
 }
-.btn-box b{
+
+.btn-box b {
   color: #fff;
   margin: 0;
   border-left: 4px solid #14a23a;
   font-size: 2.4rem;
   margin-bottom: 10px;
 }
-.btn-box a{
+
+.btn-box a {
   padding-right: 450px;
   padding-left: 20px;
   margin-top: 10px;
@@ -65,136 +71,248 @@ top: 25%
   border-radius: 10px;
   text-decoration: none;
 }
-.title{
+
+.title {
   height: 50px;
   width: 95%;
   box-shadow: 0 0 10px 0 #464646;
- border-radius: 100px 7px 100px 7px;
+  border-radius: 100px 7px 100px 7px;
 }
-.title h2{
-position: relative;
-top: 10px;
-color: #434343;
+
+.title h2 {
+  position: relative;
+  top: 10px;
+  color: #434343;
 }
-.r1{
+
+.r1 {
   animation: r1 0.5s;
   position: absolute;
   left: 10.5%;
 }
-.r2{
-    position: absolute;
-    right: 0;
+
+.r2 {
+  position: absolute;
+  right: 0;
 }
-@keyframes r1{
-  0%{
-   left: 0; 
+
+@keyframes r1 {
+  0% {
+    left: 0;
   }
-  100%{
-   left: 10.5%; 
+
+  100% {
+    left: 10.5%;
   }
 }
 
-@keyframes r2{
-  0%{
-  padding-right: 0; 
+@keyframes r2 {
+  0% {
+    padding-right: 0;
   }
-  100%{
-   padding-right: 450px;
- 
+
+  100% {
+    padding-right: 450px;
+
   }
 }
 
-.grid-itm{
+.grid-itm:hover {
   height: 290px;
-  width: 230px;
+  width: 200px;
+  border: 5px solid #00C52D;
+}
+
+.grid-itm {
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 300px;
+  width: 210px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 0 10px 0 #000;
 }
 
-.grid-row{
- display: flex; 
- justify-content: space-around;
+.grid-row {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-   ::selection {
-   background: green;
-   color: pink;
-  }
-/*======== css mobile =============*/
-
-@media only screen and (max-width: 950px) {
- 
- 
-.r1{
-  animation: r1 0.5s;
-  position: absolute;
-  left: 33.5%;
-}
-.r2{
-  top: 80px;
-    animation: r2 0.5s;
-  position: absolute;
-right: 33.5%;
-}
-@keyframes r1{
-  0%{
-   left: 0; 
-  }
-  100%{
-   left: 33.5%; 
-  }
+::selection {
+  background: #FFFFFF00;
+  color: #08FDFF;
 }
 
-@keyframes r2{
-  0%{
-   right: 0; 
-  }
-  100%{
-   right: 33.5%; 
-  }
+.img-box {
+  height: 50%;
+  width: 100%;
+  border-radius: 20px;
 }
 
+.img-box img {
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  padding: 4px;
+  padding-top: 10px;
+}
 
-.btn-box a{
-    padding-right: 40px;
-  padding-left: 40px;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  color: #fff;
-  background-color: #14A23A;
-  padding-top: 8px;
-  padding-bottom: 8px;
+.grid-row p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.grid-itm a {
+  transition: all 0.3s;
+  background-color: #4680ff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 8px;
   border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
   text-decoration: none;
 }
 
-
-.btn-box b{
-  border-left: 4px solid #14A23A00;
+.grid-itm a:hover {
+  background-color: #00FF1000;
+  border: 2px solid #4680ff;
+  color: #4680ff;
+}
+.foter{
   color: #fff;
-  margin: 0;
-  border-bottom: 4px solid #14a23a;
-  font-size: 2.4rem;
-  margin-bottom: 10px;
+ height: auto;
+ background-color: #000751;
+}
+.had-box{
+  color: #fff;
+}
+.had-box span{
+  font-size: 32px;
+  border-bottom: 3px solid #4680ff;
+  transition: all 0.3s;
+}
+.had-box span:hover{
+  border-bottom: 3px solid #FDFF46;
+  
+}
+.link{
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 20px;
+  padding: 10px;
+}
+.link:hover{
+ border: 1px dotted #4680ff; 
+ color: #FDFF46;
+ border-radius: 100px;
+}
+.aboust{
+  display: flex;
+  justify-content: space-evenly;
+  width: 330px;
+  height: 70px;
+}
+.aboust div{
+  display: flex;
+  height: 20px;
+  width: 20px;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 15px;
+  border-radius: 100px;
+}
+/*======== css mobile =============*/
+
+
+
+
+@media only screen and (max-width: 950px) {
+
+
+  .r1 {
+    animation: r1 0.5s;
+    position: absolute;
+    left: 33.5%;
+  }
+
+  .r2 {
+    top: 80px;
+    animation: r2 0.5s;
+    position: absolute;
+    right: 33.5%;
+  }
+
+  @keyframes r1 {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: 33.5%;
+    }
+  }
+
+  @keyframes r2 {
+    0% {
+      right: 0;
+    }
+
+    100% {
+      right: 33.5%;
+    }
+  }
+
+
+  .btn-box a {
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #14A23A;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+
+
+  .btn-box b {
+    border-left: 4px solid #14A23A00;
+    color: #fff;
+    margin: 0;
+    border-bottom: 4px solid #14a23a;
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+
+  .grid-itm {
+    float: left;
+    display: flexbox;
+    margin: 10px;
+    height: 270px;
+    width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 #000;
+    transition: all 0.3s;
+  }
+
+  .grid-row {
+    height: 600px;
+    width: 100%;
+    display: block;
+    justify-content: none;
+  }
+
+  .grid-itm:hover {
+    height: 270px;
+    width: 160px;
+    border: none;
+    box-shadow: 0 0 100px #00C52D;
+  }
+  .had-box span{
+  font-size: 25px;
 }
 
-.grid-itm{
-
-  float: left;
-  margin: 10px;
-  height: 270px;
-  width: 165px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 #000;
-}
-
-.grid-row{
-  height: 600px;
-  width: 100%;
- display: block; 
- justify-content: none;
-}
- 
 }
