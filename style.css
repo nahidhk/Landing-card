@@ -209,16 +209,22 @@ box-shadow: 0 0 5px 0 #232323;
   display: flex;
   justify-content: space-evenly;
   width: 330px;
-  height: 70px;
+
 }
 .aboust div{
+  font-size: 26px;
   display: flex;
-  height: 20px;
-  width: 20px;
-  background-color: #FFFFFF;
-  color: black;
-  padding: 15px;
+  color: #4680ff;
+ transition: all 0.6s;
+}
+.aboust div:hover{
   border-radius: 100px;
+  color: #FDFF46;
+  cursor: pointer;
+  font-size: 28px;
+  border: 1px solid #4680ff;
+  padding: 2px;
+  box-shadow: 0 0 50px 0 #FDFF46;
 }
 /*======== css mobile =============*/
 
