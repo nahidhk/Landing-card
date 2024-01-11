@@ -30,7 +30,7 @@ body {
 }
 
 .nav-img {
-  background-image: url("/img/home-slider.gif");
+  background-image: url("img/home-slider.gif");
   height: 250px;
   width: 100%;
   background-color: white;
